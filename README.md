@@ -11,7 +11,7 @@ Endpoints:
 1 - Login 
 https://localhost:44391/api/usuario/login
 
-BODY:
+BODY: ingresar
 
 {"Email":"i202101@edu.pe",
  "Password":"contra2021"
@@ -21,24 +21,31 @@ NOTA:password almacenado en SHA256 en Base de datos
 
 obtener el token para realizar las consultas en los endpoints. 
 
+img Ejemplo: http://prntscr.com/ydo1ya
+
 2 - Crear Notas
 
 https://localhost:44391/api/nota/crear
 
-Body: ingresar(ejemplo):
+BODY: ingresar(ejemplo):
 
 {"idUsuario":2,
  "nota1":12,
  "nota2":15,
- "nota3":20,
- "nota4":20
+ "nota3":13,
+ "nota4":18
 }
 
 Authorization: tipo "Bearer token" > ingresar el token generado en el login.
 
-3 - Listar Notas por Usuario
+IMG Ejemplo Endpoint : http://prntscr.com/ydo77c
+IMG Ejemplo Ingresar Token : http://prntscr.com/ydodpv
 
-https://localhost:44391/api/nota/2
+3 - Listar Notas por Usuario por ID (Ejm: 1 , 2)
+
+https://localhost:44391/api/nota/1
+https://localhost:44391/api/nota/2 
 
 Authorization: tipo "Bearer token" > ingresar el token generado en el login.
+IMG Ejemplo Ingresar Token : http://prntscr.com/ydodpv
 
